@@ -64,9 +64,11 @@ services:
       - "9026:9026"
       - "9027:9027"
     command:
-      - /apache-atlas/bin/atlas_start.py
-        # depends_on:
-        #   - "kafka"
+      - sh
+      - -c
+      - "while true; do sleep 3600; done"
+    # depends_on:
+    #   - "kafka"
 
 volumes:
   namenode:
