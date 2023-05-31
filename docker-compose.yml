@@ -64,7 +64,7 @@ services:
       - "9026:9026"
       - "9027:9027"
     command:
-      - /opt/apache-atlas-2.1.0/bin/atlas_start.py
+      - /apache-atlas/bin/atlas_start.py
         # depends_on:
         #   - "kafka"
 
